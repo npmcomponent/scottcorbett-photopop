@@ -101,7 +101,7 @@ Draws the histogram for the modified image.
 @return {String} the data url for the histogram representing the modified image.
 */
 PhotoPop.prototype.getHistogram = function(conf){
-	var histogram = require("histogram")({width:300, height:150});	
+	var histogram = require('scottcorbett-histogram')({width:300, height:150});	
 	
 	var width=this.context.canvas.width;
 	var height=this.context.canvas.height;
